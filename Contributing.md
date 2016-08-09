@@ -59,3 +59,16 @@ For any complex review, or really any review at all, the reviewable.io tool is i
 #### Code review checklist
 
 TODO
+
+### New webdev projects
+
+#### Django (with Sugardough)
+
+If you need to start a new project that involves web development a good starting point is [Sugardough](https://github.com/mozilla/sugardough), a [Django](https://www.djangoproject.com/) project template made by some [awesome people](https://github.com/mozilla/sugardough/graphs/contributors) in the Mozilla webdev community. It comes with lots of goodies and sane defaults: readthedocs, travis, converalls, docker-compose, etc. See [the project readme](https://github.com/mozilla/sugardough#sugardough) for a more extensive list of features.
+
+#### Django Rest Framework
+
+If your project requires a restful api, please make yourself a favor and consider using [Django Rest Framework](http://www.django-rest-framework.org/). It integrates well with the Django ORM, although it's not a requirement, and the Django authentication system. It's fully configurable and it comes with standard-compliant defaults.
+It also provides a documentation site for your api where users can test it directly.
+
+Both Django and Django Rest Framework have been used by the Mozilla webdev community for years and their value has been even recognised with a [MOSS grant](https://wiki.mozilla.org/MOSS)
