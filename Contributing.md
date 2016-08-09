@@ -68,7 +68,7 @@ If you need to start a new project that involves web development a good starting
 
 #### Django Rest Framework
 
-If your project requires a restful api, please make yourself a favor and consider using [Django Rest Framework](http://www.django-rest-framework.org/). It integrates well with the Django ORM, although it's not a requirement, and the Django authentication system. It's fully configurable and it comes with standard-compliant defaults.
+If your project requires a restful api, please do yourself a favor and consider using [Django Rest Framework](http://www.django-rest-framework.org/). It integrates well with the Django ORM, although it's not a requirement, and the Django authentication system. It's fully configurable and it comes with standard-compliant defaults.
 It also provides a documentation site for your api where users can test it directly.
 
 Both Django and Django Rest Framework have been used by the Mozilla webdev community for years and their value has been even recognised with a [MOSS grant](https://wiki.mozilla.org/MOSS)
