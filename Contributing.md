@@ -16,7 +16,11 @@ Once a project approaches “production quality”, it should be moved to one of
 
 Create a new branch to work on a new feature. Try to keep the work focused on a single logical change or feature. Ideally there should be a bug filed in bugzilla for the task.
 
-Changes should not be merged directly in the master branch, rather a pull request should be filed.
+To submit changes, make a personal fork of the repository, push your branch there, and open a pull request.
+Keeping development branches on forks keeps the upstream repository cleaner and lessens the chance of accidentally
+pushing changes to master prematurely.
+Pushing branches upstream should be reserved for cases where your changes need to be tested or built
+by the CI pipeline.
 
 #### Atomic commits
 
