@@ -56,7 +56,9 @@ Here is an article on [How to Write a good Git Commit Message](http://chris.beam
 
 Code should not be merged into an official mozilla github project without being reviewed by one of your peers. If you don’t know who to ask for review, check the history of the project or files. If it is a brand new repository, ask someone on your team.
 
-Typically the person reviewing the change will merge the branch once all feedback has been addressed. If they do not have permission to merge, they will comment with “r+” or similar, at which point the author can merge the change.
+Typically the person reviewing the change will merge the branch once all feedback has been addressed. If they do not have permission to merge, they will comment with "r+" or similar (a convention borrowed from [Bugzilla flags](https://bmo.readthedocs.io/en/latest/using/editing.html#flags)), at which point the author can merge the change.
+
+As either a submitter or reviewer, make an effort to be explicit about where you stand in the review process and make sure the PR's `Reviewers` field reflects that. If the reviewer requested changes and you've addressed them, select that person again in `Reviewers` in order to explicitly flag them for another round of review. If you're reviewing for another person with commit access and have only minor comments that shouldn't prevent merging, mark your review as an approval and comment with "r+ with changes" or the like to make it clear no further review is required and the submitter can merge as they're ready.
 
 For any complex review, or really any review at all, the reviewable.io tool is invaluable. Please try to use this if possible. Major advantages include the ability to keep track of changes even if the commits are rebased or modified, tracking of whether individual comments have been addressed or not, and batching up of feedback (so the conversation generates a single notification per iteration instead of a notification per comment).
 
