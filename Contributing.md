@@ -44,6 +44,18 @@ In order to properly organise your work, there are several git subcommand that m
 
 Bonus points if you use `git commit --fixup` in combination with `git rebase -i <commit id/sha>^ --autosquash` to automatically rearrange your fixup commits in the right place.
 
+##### When to squash commits
+
+In practice, the process of code review (more on that in the next major section below)
+may lead you to push several small fixup commits to respond to reviewer comments.
+If these make sense as atomic commits, then by all means
+the pull request can be merged via the default "Rebase and merge" process that preserves each commit.
+If, however, the overall scope of the pull request is small and a single commit seems like a
+better logical chunk to include in the repository's history, you may want to squash your
+changes to a single commit before merging. You can either do the squashing yourself and
+push to the branch before merging into master or you may use GitHub's
+"Squash and merge" functionality to handle the rebase if that option is enabled for the repository.
+
 #### Commit message
 
 There are several guides online that talk about this topic. The tl;dr is to keep it informative and succinct. First line no more than 50 chars long and eventually a blank line and an extended description.
